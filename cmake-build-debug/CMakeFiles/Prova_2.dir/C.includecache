@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/rhuan/Desktop/Ceferno/Lab. Estrutura de Dados/Codigos/Atividades/Prova_2/arvore.c
+stdio.h
+-
+stdlib.h
+-
+arvore.h
+C:/Users/rhuan/Desktop/Ceferno/Lab. Estrutura de Dados/Codigos/Atividades/Prova_2/arvore.h
+
+C:/Users/rhuan/Desktop/Ceferno/Lab. Estrutura de Dados/Codigos/Atividades/Prova_2/arvore.h
+
+C:/Users/rhuan/Desktop/Ceferno/Lab. Estrutura de Dados/Codigos/Atividades/Prova_2/main.c
+stdio.h
+-
+arvore.h
+C:/Users/rhuan/Desktop/Ceferno/Lab. Estrutura de Dados/Codigos/Atividades/Prova_2/arvore.h
+

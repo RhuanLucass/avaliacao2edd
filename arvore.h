@@ -17,12 +17,12 @@ void preOrdem(Arvore *t);
 void posOrdem(Arvore *t);
 int altura(Arvore *a);
 
-int contaNosT(Arvore *a);
+int contaNosNT(Arvore *a);
 int contaFolhas (Arvore *a);
 int somaNos(Arvore *a);
 int menorValor(Arvore *a);
 int imprimirNivel(Arvore *a, int nivelEscolhido, int nivelInicial);
-int dobraArvore(Arvore *a, int x);
+int dobraArvore(Arvore *a);
 int lista(Arvore *a, int vet[]);
 
 #endif //PROVA_2_ARVORE_H

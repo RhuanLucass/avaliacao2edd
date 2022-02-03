@@ -3,7 +3,6 @@
 
 int main() {
     Arvore *a = criaArvore();
-    int nivel = 3;
 
     insere(&a, 50);
     insere(&a, 35);
@@ -18,17 +17,16 @@ int main() {
     insere(&a, 55);
     insere(&a, 52);
 
-
-    printf("Numero de nos na arvore: %d\n", contaNosT(a));
+    int nivel = 3;
+    printf("Numero de nos na arvore: %d\n", contaNosNT(a));
     printf("Soma dos valores dos nos: %d\n", somaNos(a));
     printf("Menor valor registrado: %d\n", menorValor(a));
     printf("Valores no nivel %d: \n", nivel);
     imprimirNivel(a, nivel, 0);
-
-
-    dobraArvore(a, 20);
-    dobraArvore(a, 89);
-
+    printf("\n");
+    emOrdem(a);
+    dobraArvore(a);
+    printf("\n");
     emOrdem(a);
     return 0;
 }

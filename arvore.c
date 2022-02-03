@@ -129,14 +129,14 @@ int contaFolhas (Arvore *a){
 }
 
 //1
-int contaNosT(Arvore *a) {
+int contaNosNT(Arvore *a) {
     if (arvoreVazia(a)){
         return 0;
     }
     if( a->esq==NULL && a->dir==NULL){
-        return contaNosT(a->esq) + contaNosT(a->dir);
+        return contaNosNT(a->esq) + contaNosNT(a->dir);
     }
-    return contaNosT(a->esq) + contaNosT(a->dir) + 1;
+    return contaNosNT(a->esq) + contaNosNT(a->dir) + 1;
 }
 
 //2
@@ -177,20 +177,22 @@ int imprimirNivel(Arvore *a, int nivelEscolhido, int nivelInicial) {
 }
 
 //5
-int dobraArvore(Arvore *a, int x) {
+int dobraArvore(Arvore *a) {
+    if(a->esq != NULL)
+        dobraArvore(a->esq);
+
+    if(a->dir != NULL)
+        dobraArvore(a->dir);
+
     //chave par
-    if(x % 2 == 0){
-        insere(&a, x+1);
-        insere(&a, x);
+    if(a->info % 2 == 0){
+        a->info++;
+        insere(&a, a->info--);
     }
 
     //chave impar
-    if(x % 2 == 1){
-        insere(&a, x-1);
-        insere(&a, x);
+    if(a->info % 2 == 1){
+        a->info--;
+        insere(&a, a->info++);
     }
-}
-
-int lista(Arvore *a, int vet[]) {
-
 }

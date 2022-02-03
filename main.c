@@ -23,10 +23,10 @@ int main() {
     printf("Menor valor registrado: %d\n", menorValor(a));
     printf("Valores no nivel %d: \n", nivel);
     imprimirNivel(a, nivel, 0);
-    printf("\n");
+    printf("\nImpresso em ordem:\n");
     emOrdem(a);
     dobraArvore(a);
-    printf("\n");
+    printf("\nImpresso em ordem apos dobrar a arvore:\n");
     emOrdem(a);
     return 0;
 }
